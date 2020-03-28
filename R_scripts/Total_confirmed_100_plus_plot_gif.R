@@ -57,7 +57,7 @@ line_plot <- ggplot(data=centered_countries_100_or_more_long[centered_countries_
             aes(label=ctry_plot, x=day_centered, y=value, color=ctry_plot), show.legend = FALSE) +
   labs(y="Total Confirmed COVID-19 Cases", 
        x="Number of Days since 100 Confirmed Cases", 
-       caption="Source:CSSE data maintained by Johns Hopkins University\nhttps://systems.jhu.edu/research/public-health/ncov/", 
+       caption="Source: CSSE data maintained by Johns Hopkins University\nhttps://systems.jhu.edu/research/public-health/ncov/", 
        title = "Total COVID-19 Cases as a Function of Days Since Hitting 100+ Cases") +
   transition_reveal(day_centered) +
   theme_bw() 
